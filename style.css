@@ -1,0 +1,23 @@
+body{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input{
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
