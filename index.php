@@ -1,28 +1,3 @@
-<?php
-include("./database/config.php");
-
-if(isset($_POST["submit"]))
-{
-    // echo "success";
-    $username = $_POST["username"];
-    $email = $_POST["email"];
-    $mobile = $_POST["mobile"];
-    $address = $_POST["address"];
-
-    //insert
-    $sql = "INSERT INTO `users` (username, email, mobile,address) values ('$username', '$email', '$mobile', '$address')";
-
-
-
-    if(mysqli_query($conn,$sql)){
-        header('location:display.php');
-    }else{
-        echo "Error". mysqli_error();
-    }
-};
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

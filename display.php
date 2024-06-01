@@ -1,5 +1,6 @@
 <?php
-include "./database/config.php";?>
+include_once "./database/config.php";
+?>
 
 <!DOCTYPE html>
 <html lang="en">

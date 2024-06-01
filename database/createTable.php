@@ -1,17 +1,17 @@
 <?php
 include("./config.php");
 
-$sql = "CREATE TABLE users(
-    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    username VARCHAR(100) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    mobile VARCHAR(11) NOT NULL,
-    address VARCHAR(255) NOT NULL
+
+$sql = "CREATE TABLE student(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    dob DATE,
+    details VARCHAR(255),
+    gender VARCHAR(1),
+    section VARCHAR(10)
 )";
 
-if(mysqli_query($conn, $sql)){
-    echo "Table Created";
-}else{
+if(!mysqli_query($conn, $sql)){
     die("Some Error Occurs". mysqli_error());
 }
 ?>
